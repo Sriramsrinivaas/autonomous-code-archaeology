@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-code-archaeology"
+version = "0.1.0"
+description = "Autonomous multi-agent system for analyzing code repositories"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = [
+    "code-analysis",
+    "architecture",
+    "refactoring",
+    "technical-debt",
+    "code-quality",
+    "agent-system",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/autonomous-code-archaeology"
+"Bug Reports" = "https://github.com/yourusername/autonomous-code-archaeology/issues"
+"Documentation" = "https://github.com/yourusername/autonomous-code-archaeology#readme"
+"Source Code" = "https://github.com/yourusername/autonomous-code-archaeology"
+
+[project.scripts]
+archaeology = "archaeology.cli:main"
+
+[tool.setuptools]
+packages = ["archaeology"]
+
+[tool.setuptools.package-data]
+archaeology = ["py.typed"]
